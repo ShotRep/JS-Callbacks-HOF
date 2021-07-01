@@ -74,3 +74,29 @@
 // console.log(numbers.reduce(function(currentTotal, x){
 //   return currentTotal + x  //<=just adding up each element.
 // }))
+
+//more exercises
+
+// //forEach
+// const words = ['yarg', 'blarg', 'blargity']
+
+// words.forEach(function(item){ //<=item,index,array
+//  console.log(item)  //<=item,index,array
+// })
+
+// //map   sooooo much nicer than a for loop.
+// console.log(words.map(function(item){
+//   return item.toUpperCase()
+// }))
+
+//write our own higher order function
+
+// function compliment(){
+//   console.log("Hey,there's something I want to tell you: ")  //<=repetitive
+//   console.log("You have reall nice teeth, like so nice")
+// }
+
+// function insult(){
+//    console.log("Hey,there's something I want to tell you: ")  //<=repetitive
+//    console.log("Like, your elbows are so gnarly")
+// }
