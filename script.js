@@ -22,3 +22,55 @@
                                     DRY CODING
    3.) Do Not Repeat Yourself(DRY): shorter, cleaner, less repetitive code.
 */
+
+//array methods - higher order functions
+//forEach = built in for-loop.
+//map = returns a mapped array
+//reduce = take a collection and reduce it down to 1 element.
+
+// //our callback function
+// function logNegative(x){
+//   console.log(-x)
+// }
+// function logPlusTwo(x){
+//   console.log(x+2)
+// }
+
+// const numbers = [1,3,5,7,9,11]
+
+// //our higher order function
+// numbers.forEach(logNegative)
+// numbers.forEach(logPlusTwo)
+
+// //our callback function
+// function mapNegative(x) {
+//   return -x
+// }
+// function mapPlusTwo(x) {
+//   return x + 2
+// }
+
+// //our array
+// const numbers = [1.1, 3.6, 5.2, 7.8, 9.2, 11.4]
+
+// //our higher order function
+
+// //1.) write them out and name them.
+// console.log(numbers.map(mapNegative))
+// console.log(numbers.map(mapPlusTwo))
+
+// //2.) we can use existing functions or methods.
+// console.log(numbers.map(Math.round))
+// console.log(numbers.map(Math.round))
+
+// //3a.) we can use an anonymous function. good if we are only using once.
+// console.log(numbers.map(function(x){
+//   return x * -1
+// }))
+// console.log(numbers.map(function(x){
+//   return x + 2
+// }))
+// //3b.) anonymous function. reduce()
+// console.log(numbers.reduce(function(currentTotal, x){
+//   return currentTotal + x  //<=just adding up each element.
+// }))
