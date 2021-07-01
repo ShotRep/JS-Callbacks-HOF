@@ -93,10 +93,30 @@
 
 // function compliment(){
 //   console.log("Hey,there's something I want to tell you: ")  //<=repetitive
-//   console.log("You have reall nice teeth, like so nice")
+//   console.log("You have really nice teeth, like so nice")
 // }
 
 // function insult(){
 //    console.log("Hey,there's something I want to tell you: ")  //<=repetitive
 //    console.log("Like, your elbows are so gnarly")
 // }
+
+//create a higher order function for this repetative code.
+
+//higher-order function
+function giveFeedback(cb) {
+  console.log("Hey,there's something I want to tell you: ")
+  return cb()
+}
+
+function compliment() {
+  console.log("You have really nice teeth, like so nice")
+}
+
+function insult() {
+  console.log("Like, your elbows are so knarly")
+}
+
+//callback function
+giveFeedback(compliment)
+giveFeedback(insult)
