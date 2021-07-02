@@ -101,9 +101,9 @@
 //    console.log("Like, your elbows are so gnarly")
 // }
 
-//create a higher order function for this repetative code.
+//create a higher order function for this repetitive code.
 
-//higher-order function
+//callback function
 function giveFeedback(cb) {
   console.log("Hey,there's something I want to tell you: ")
   return cb()
@@ -114,9 +114,9 @@ function compliment() {
 }
 
 function insult() {
-  console.log("Like, your elbows are so knarly")
+  console.log("Like, your elbows are so gnarly")
 }
 
-//callback function
+//higher-order function
 giveFeedback(compliment)
 giveFeedback(insult)
